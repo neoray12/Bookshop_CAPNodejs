@@ -1,0 +1,31 @@
+{
+    "name": "bookshop",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "repository": "<Add your repository here>",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^3.34.2",
+        "@sap/cds-odata-v2-adapter-proxy": "^1.4.33",
+        "@sap/cds-runtime": "^1.2.2",
+        "@sap/hana-client": "^2.5.101",
+        "express": "^4",
+        "sqlite3": "^4.2.0",
+        "supertest": "^4.0.2"
+    },
+    "devDependencies": {
+        "jest": "*"
+    },
+    "scripts": {
+        "start": "npx cds run",
+        "test": "jest"
+    },
+    "cds": {
+        "requires": {
+            "db": {
+                "kind": "sql"
+            }
+        }
+    }
+}
